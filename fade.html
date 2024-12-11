@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fading</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     $("p").click(function () {
+       $("p").fadeOut(10000);
+
+     });
+
+     $(".text").click(function(){
+       $("p").fadeIn(10000);
+       alert("Fading In!")
+     });
+
+   });
+ </script>
+</head>
+<body>
+<p>I'm some text!</p>
+<div class="text">Some more stuff here.</div>
+<div id="text">Even more stuff this way.</div>
+</body>
+</html>
