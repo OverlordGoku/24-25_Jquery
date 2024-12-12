@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function () {
+        // alert ("test");
+        $("#goku").animate({
+          left: "+=50px",
+          opacity: "0.2",
+          height: "+=150"
+        });
+        $("#goku").animate({
+          height: "+=150",
+          left: "+=150px",
+
+        });
+        $("#vegeta").animate({
+          left: "+=50px",
+          opacity: "0.2",
+          height: "+=150"
+
+        });
+        $("#vegeta").animate({
+          height: "+=150",
+          left: "+=150px"
+        });
+        $("#air").animate({
+          left: "+=50px",
+          opacity: "0.2",
+          height: "+=150"
+        });
+        $("#air").animate({
+          height: "+=150",
+          left: "+=150px"
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+<div>
+<button>Click Here</button>
+<img id="goku" src="img/gokubase.jpg" style="position: absolute;width:100px"/>
+<img id="vegeta" src="img/vegeta.jpg" style="position: absolute;width:100px"/>
+<img id="air" src="img/transparent%20air.jpg" style="position: absolute;width:100px"/>
+</div>
+
+</body>
+</html>

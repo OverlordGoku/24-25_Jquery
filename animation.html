@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      // alert ("test");
+      $("div").animate({
+        left: "+=50px",
+        opacity: "0.2",
+        height: "+=150"
+      });
+      $("div").animate({
+        height: "+=150",
+        left: "+=150px"
+      });
+    });
+  });
+ </script>
+</head>
+<body>
+<button>Click Here</button>
+<div style="height:300px;width:300px; background-color:purple;position:absolute;">
+</div>
+</body>
+</html>
