@@ -11,6 +11,19 @@
           $("#fname").css({"background-color": "red"});
           $("#fnameE").css({"display": "block"});
         }
+        var phone_filter = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+        if(!phone_filter.test($("#phone").val())) {
+          $("#phone").css({"background-color": "red"});
+          $("#phoneE").css({"display": "block"});
+        }
+        var email_filter = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!email_filter.test($("#email").val())) {
+          $("#email").css({"background-color": "red"});
+          $("#emailE").css({"display": "block"});
+        }
+
+
+
         if($("#lname").val().length === 0){
           $("#lname").css({"background-color": "red"});
           $("#lnameE").css({"display": "block"});
@@ -58,7 +71,7 @@
 <body>
 
 
-<p>I'm some text!</p>
+<p>im some text!</p>
 <label for ="fname">First name</label>
 <input type ="text" name = "fname" id = "fname"><br />
 <div id = "fnameE" style = "display: none"> enter first name NOW</div>
@@ -78,7 +91,7 @@
 <input type ="text" name = "city" id = "city">
 <div id = "cityE" style = "display: none"> enter city NOW</div>
 <label for ="city">State:</label>
-<select name ="state"id = "state">
+<select name ="state" id = "state">
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
   <option value="AZ">Arizona</option>
@@ -146,7 +159,7 @@
 
 <label for ="email">Email:</label>
 <input type ="text" name = "email" id = "email"><br />
-<div id = "emailE" style = "display: none"> enter last name NOW</div>
+<div id = "emailE" style = "display: none"> enter a valid email NOW</div>
 
 
 <label for ="username">Username:</label>
