@@ -104,24 +104,33 @@
     <div class="col">
       <div class="border border-1 mt-3 mb-3 p-3 bg-white">
 
+<style>
+  /*
+  * tag:verb::attribute {}
+   */
+  input:focus::placeholder {
+    color: transparent;
+  }
+</style>
+
 
 <label for ="fname">First name</label>
-<input type ="text" name = "fname" id = "fname"><br />
+<input type ="text" name = "fname" id = "fname" placeholder="First Name"><br />
 <div id = "fnameE" style = "display: none"> enter first name NOW</div>
 
 
 <label for ="lname">Last name</label>
-<input type ="text" name = "lname" id = "lname"><br />
+<input type ="text" name = "lname" id = "lname" placeholder="Last Name"><br />
 <div id = "lnameE" style = "display: none"> enter last name NOW</div>
 
 
 <label for ="dob">Date of Birth</label>
-<input type ="text" name = "dob" id = "dob"><br />
+<input type ="text" name = "dob" id = "dob" placeholder="Date Of Birth"><br />
 <div id = "dobE" style = "display: none"> enter Date of birth NOW</div>
 
 
 <label for ="city">City:</label>
-<input type ="text" name = "city" id = "city">
+<input type ="text" name = "city" id = "city" placeholder="City">
 <div id = "cityE" style = "display: none"> enter city NOW</div>
 <label for ="city">State:</label>
 <select name ="state" id = "state">
@@ -178,33 +187,33 @@
   <option value="WY">Wyoming</option>
   State</select>
 <label for ="street">Street:</label>
-<input type ="text" name = "street" id = "street">
+<input type ="text" name = "street" id = "street" placeholder="Street">
 <div id = "streetE" style = "display: none"> enter street NOW</div>
 <label for ="ZIP">ZIP:</label>
-<input type ="text" name = "ZIP" id = "ZIP"><br />
+<input type ="text" name = "ZIP" id = "ZIP" placeholder="Zip"><br />
 <div id = "ZIPE" style = "display: none"> enter ZIP NOW</div>
 
 
 <label for ="phone">Phone:</label>
-<input type ="text" name = "phone" id = "phone"><br />
+<input type ="text" name = "phone" id = "phone" placeholder="Phone"><br />
 <div id = "phoneE" style = "display: none"> enter phone NOW</div>
 
 
 <label for ="email">Email:</label>
-<input type ="text" name = "email" id = "email"><br />
+<input type ="text" name = "email" id = "email" placeholder="Email"><br />
 <div id = "emailE" style = "display: none"> enter a valid email NOW</div>
 
 
 <label for ="username">Username:</label>
-<input type ="text" name = "username" id = "username"><br />
+<input type ="text" name = "username" id = "username" placeholder="UserName"><br />
 <div id = "usernameE" style = "display: none"> enter username NOW</div>
 
 
 <label for ="password">Password:</label>
-<input type ="text" name = "password" id = "password"><br />
+<input type ="text" name = "password" id = "password" placeholder="Password"><br />
 <div id = "passwordE" style = "display: none"> enter password NOW</div>
 <label for ="password2">Confirm Password:</label>
-<input type ="text" name = "password2" id = "password2"><br />
+<input type ="text" name = "password2" id = "password2" placeholder="Confirm Password"><br />
 <div id = "password2E" style = "display: none"> enter confirmation password NOW</div>
 
 
