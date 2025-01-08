@@ -24,12 +24,12 @@
 
     function updateName(){
       sessionStorage.setItem("name", "New Name");
-      $("input#name").val(sessionStorage.getItem("name"));
+      updateInputs();
     }
 
     function clearSession(){
       sessionStorage.clear();
-      $("input#name").val(sessionStorage.getItem("name"));
+      updateInputs()
     }
   </script>
 
