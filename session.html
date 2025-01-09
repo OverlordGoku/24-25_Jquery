@@ -11,6 +11,7 @@
     // Uses a key-value pair
     // .set("key", "value")
     sessionStorage.setItem("name", "Mr. Kiedes");
+    updateInputs();
 
     $("input#name").val(sessionStorage.getItem("name"));
     });
