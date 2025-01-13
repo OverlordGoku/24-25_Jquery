@@ -1,5 +1,5 @@
 document.ready(function() {
-    function addGame(){
+    function addProduct(){
         sessionStorage.setItem("price","25")
         updateTotal();
     }
