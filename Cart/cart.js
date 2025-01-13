@@ -1,6 +1,9 @@
 document.ready(function() {
     function addProduct(){
-        sessionStorage.setItem("price","25")
+        sessionStorage.setItem("DBSZPrice","25")
+        sessionStorage.setItem("DBSZQty","1")
+        sessionStorage.setItem("DBSZName","DragonBallSparkingZero")
+        sessionStorage.setItem("total",sessionStorage.getItem("total").parseInt() + 25)
         updateTotal();
     }
    function updateTotal(){
